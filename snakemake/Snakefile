@@ -1,0 +1,25 @@
+
+import pandas as pd
+
+rule R1:
+    output: '{prefix}.txt'
+    shell: 
+        'echo hello world > {output}'
+
+rule R2:
+    input: '{prefix}.txt'
+    output: '{prefix}.second.csv'
+    shell:
+        '''
+        cat {input} > {output}
+        echo This is the second line >> {output}
+        '''
+
+rule R3:
+    input: '{prefix}.txt'
+    output: '{prefix}.R3.tsv'
+    run: 
+        data = pd.read_csv(input[0], header = None)
+        print('data :',data)
+        data.iloc[0,0] = 1
+        data.to_csv(output[0], sep = '\t')
