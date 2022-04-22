@@ -6,3 +6,4 @@
 - [snakemake tutorial 3](https://edwards.flinders.edu.au/snakemake-tutorial)
 - [snakemake tutorial 4](https://www.youtube.com/watch?v=hPrXcUUp70Y)
 - [mamba](https://mamba.readthedocs.io/en/latest/)
+- [f-strings](https://realpython.com/python-f-strings/)

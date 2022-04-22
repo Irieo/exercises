@@ -1,0 +1,13 @@
+configfile: "config.yaml"
+
+rule all_jobs:
+    input: expand("results/processed_{mywildcard}.csv", mywildcard=config["mywildcard"])
+    # input: expand("results/processed_1.csv")
+
+rule R1:
+    input:
+        data="data/deniro.csv"
+    output: 
+        out="results/processed_{mywildcard}.csv"
+    script:
+        "scripts/process.py"

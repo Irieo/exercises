@@ -1,0 +1,7 @@
+name: snakemake-exercise
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - pandas
+  - snakemake-minimal
