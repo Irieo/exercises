@@ -1,3 +1,3 @@
-mywildcard: [1,2]
+mywildcard: [1,3]
 memory_factor: 3
-activate_rule: true
+activate_rule: True

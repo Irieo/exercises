@@ -1,13 +1,24 @@
+# Alogn the lines of F. Neumann's snakemake tutorials (video)
+
 configfile: "config.yaml"
+
+#def memory(w):
+#    return int.(w.mywildcard) * 1000
 
 rule all_jobs:
     input: expand("results/processed_{mywildcard}.csv", mywildcard=config["mywildcard"])
     # input: expand("results/processed_1.csv")
 
-rule R1:
-    input:
-        data="data/deniro.csv"
-    output: 
-        out="results/processed_{mywildcard}.csv"
-    script:
-        "scripts/process.py"
+if config["activate_rule"]:
+    rule R1:
+        #resource management
+        #threads: 4
+        #resources: 
+        #    mem_mb=1000
+        #shadow: "shallow"
+        input:
+            data="data/deniro.csv"
+        output: 
+            out="results/processed_{mywildcard}.csv"
+        script:
+            "scripts/process.py"
