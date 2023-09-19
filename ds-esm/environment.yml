@@ -1,0 +1,62 @@
+name: esm-2023
+channels:
+- conda-forge
+dependencies:
+- python>=3.11
+- pip
+
+# main packages
+- numpy
+- scipy
+- pandas>=1.4
+- geopandas>=0.11.0
+- xarray
+- networkx
+- yaml
+- pyomo
+- netcdf4
+- pypsa>=0.22.1
+- atlite>=0.2.10
+- powerplantmatching>=0.5.6
+- rasterio!=1.2.10
+
+# interactive python
+- ipython
+- jupyterlab
+
+# reading excel tables
+- tabula-py
+- xlrd
+- lxml
+- pytables
+- pyxlsb
+- openpyxl
+
+# geodata utilities
+- fiona
+- shapely>2
+- proj
+- geopy
+- pyepsg
+- cartopy
+- descartes
+- country_converter
+
+# plotting
+- matplotlib>=3.5
+- plotly
+- hvplot
+- holoviews
+- geoviews
+- graphviz
+
+# solvers
+- coincbc
+- glpk
+
+# publishing
+- jupyter-book
+- ghp-import
+
+- pip:
+  - highspy
