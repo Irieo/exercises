@@ -1,6 +1,6 @@
 # Programming playground
 
-exercises, modelling playground, and notebooks that I want to keep for myself organised.
+random exercises, modelling playground, and notebooks that I want to keep for myself organised.
 
 ## Snakemake materials
 - [docs](https://snakemake.readthedocs.io/en/stable/index.html)
@@ -16,13 +16,14 @@ exercises, modelling playground, and notebooks that I want to keep for myself or
 - [software paper](https://openresearchsoftware.metajnl.com/articles/10.5334/jors.188/)
 - [video](https://www.youtube.com/watch?v=h8YA8RM33K8&t=1s)
 
-## Data science for ESM | Fabian Neumann's class
+## Data science for ESM
 - [Course webpage](https://fneum.github.io/data-science-for-esm/intro.html)
 
 ## Books
 - [Think Python](https://greenteapress.com/wp/think-python/)
+- [Probably overthing it](https://www.allendowney.com/blog/)
 
 ## Fun
+- [Python API for StarCraft II](https://github.com/google-deepmind/pysc2)
 - [Codeingame platform](https://www.codingame.com/)
-- [Probably overthinking it](https://www.allendowney.com/blog/)
 - [Python chess library](https://python-chess.readthedocs.io/en/latest/)
